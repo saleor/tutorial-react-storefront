@@ -1,6 +1,6 @@
+import { LoginForm } from "@ui/components/LoginForm";
 import { CurrentUserOrderListDocument } from "@/gql/graphql";
 import { executeGraphQL } from "@/lib/graphql";
-import { LoginForm } from "@/ui/components/LoginForm";
 import { OrderListItem } from "@/ui/components/OrderListItem";
 
 export default async function OrderPage() {

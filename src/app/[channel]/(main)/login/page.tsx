@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import { Loader } from "@/ui/atoms/Loader";
-import { LoginForm } from "@/ui/components/LoginForm";
+import { LoginForm } from "@ui/components/LoginForm";
+import { Loader } from "@ui/atoms/Loader";
 
 export default function LoginPage() {
 	return (

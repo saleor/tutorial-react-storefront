@@ -1,10 +1,11 @@
+import { LoginButton } from "@ui/atoms/LoginButton";
 import { saleorAuthClient } from "@/app/config";
 
 export async function LoginForm() {
 	return (
 		<div className="mx-auto mt-16 w-full max-w-lg">
 			<form
-				className="rounded border p-8 shadow-md"
+				className="flex flex-col gap-y-2 rounded border p-8 shadow-md"
 				action={async (formData) => {
 					"use server";
 
@@ -23,21 +24,18 @@ export async function LoginForm() {
 					}
 				}}
 			>
-				<div className="mb-2">
-					<label className="sr-only" htmlFor="email">
-						Email
-					</label>
+				<label>
+					<span className="sr-only">Email</span>
 					<input
 						type="email"
 						name="email"
 						placeholder="Email"
 						className="w-full rounded border bg-neutral-50 px-4 py-2"
+						required
 					/>
-				</div>
-				<div className="mb-4">
-					<label className="sr-only" htmlFor="password">
-						Password
-					</label>
+				</label>
+				<label>
+					<span className="sr-only">Password</span>
 					<input
 						type="password"
 						name="password"
@@ -45,17 +43,11 @@ export async function LoginForm() {
 						autoCapitalize="off"
 						autoComplete="off"
 						className="w-full rounded border bg-neutral-50 px-4 py-2"
+						required
 					/>
-				</div>
-
-				<button
-					className="rounded bg-neutral-800 px-4 py-2 text-neutral-200 hover:bg-neutral-700"
-					type="submit"
-				>
-					Log In
-				</button>
+				</label>
+				<LoginButton />
 			</form>
-			<div></div>
 		</div>
 	);
 }

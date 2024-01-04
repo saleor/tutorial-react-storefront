@@ -49,12 +49,12 @@ export function UserMenu({ user }: Props) {
 					<div className="flex flex-col px-1 py-1">
 						<Menu.Item>
 							{({ active }) => (
-								<form action={logout}>
+								<form action={logout} className="flex flex-col">
 									<button
 										type="submit"
 										className={clsx(
 											active && "bg-neutral-100",
-											"block px-4 py-2 text-start text-sm font-medium text-neutral-500 hover:text-neutral-700",
+											"px-4 py-2 text-start text-sm font-medium text-neutral-500 hover:text-neutral-700",
 										)}
 									>
 										Log Out
