@@ -46,14 +46,14 @@ export const PaymentStatus = async ({ status }: Props) => {
 			return (
 				<p className="flex items-center gap-1 text-yellow-500">
 					<AlertCircleIcon className="h-4 w-4" aria-hidden />
-					parttialy paid
+					partially paid
 				</p>
 			);
 		case PaymentChargeStatusEnum.PartiallyRefunded:
 			return (
 				<p className="flex items-center gap-1 text-yellow-500">
 					<AlertCircleIcon className="h-4 w-4" aria-hidden />
-					parttialy refunded
+					partially refunded
 				</p>
 			);
 		case PaymentChargeStatusEnum.Pending:
