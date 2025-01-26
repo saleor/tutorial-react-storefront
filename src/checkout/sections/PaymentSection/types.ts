@@ -1,4 +1,5 @@
 import { type StripeGatewayId } from "./StripeElements/types";
+import { type DummyGatewayId } from "./Dummy/types";
 import { type PaymentGatewayConfig } from "@/checkout/graphql";
 import {
 	type AdyenGatewayId,
@@ -10,7 +11,7 @@ export type PaymentGatewayId = AdyenGatewayId | StripeGatewayId;
 export type ParsedAdyenGateway = ParsedPaymentGateway<AdyenGatewayId, AdyenGatewayInitializePayload>;
 export type ParsedStripeGateway = ParsedPaymentGateway<StripeGatewayId, {}>;
 
-export type ParsedPaymentGateways = ReadonlyArray<ParsedAdyenGateway | ParsedStripeGateway>;
+export type ParsedPaymentGateways = ReadonlyArray<ParsedAdyenGateway | ParsedStripeGateway | ParsedDummyGateway>;
 
 export interface ParsedPaymentGateway<ID extends string, TData extends Record<string, any>>
 	extends Omit<PaymentGatewayConfig, "data" | "id"> {
