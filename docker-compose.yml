@@ -4,6 +4,7 @@ services:
   saleor-storefront:
     container_name: saleor-storefront
     build:
+      context: .
       dockerfile: Dockerfile
       args:
         NEXT_PUBLIC_SALEOR_API_URL: ${NEXT_PUBLIC_SALEOR_API_URL}
