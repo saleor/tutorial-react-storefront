@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { useAlerts } from "./useAlerts";
 import { useCheckoutCompleteMutation } from "@/checkout/graphql";
 import { useCheckout } from "@/checkout/hooks/useCheckout";
 import { useSubmit } from "@/checkout/hooks/useSubmit";
@@ -9,6 +10,7 @@ export const useCheckoutComplete = () => {
 		checkout: { id: checkoutId },
 	} = useCheckout();
 	const [{ fetching }, checkoutComplete] = useCheckoutCompleteMutation();
+	const { showCustomErrors } = useAlerts();
 
 	const onCheckoutComplete = useSubmit<{}, typeof checkoutComplete>(
 		useMemo(
@@ -30,8 +32,12 @@ export const useCheckoutComplete = () => {
 						window.location.href = newUrl;
 					}
 				},
+				onError: ({ errors }) => {
+					const error = errors.join(", ");
+					showCustomErrors([{ message: error }]);
+				},
 			}),
-			[checkoutComplete, checkoutId],
+			[checkoutComplete, checkoutId, showCustomErrors],
 		),
 	);
 	return { completingCheckout: fetching, onCheckoutComplete };

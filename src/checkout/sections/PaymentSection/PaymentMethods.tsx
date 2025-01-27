@@ -19,6 +19,12 @@ export const PaymentMethods = () => {
 		<div className="gap-y-8">
 			{availablePaymentGateways.map((gateway) => {
 				const Component = paymentMethodToComponent[gateway.id];
+
+				if (!Component) {
+					console.warn(`No component found for gateway ${gateway.id}`);
+					return null;
+				}
+
 				return (
 					<Component
 						key={gateway.id}

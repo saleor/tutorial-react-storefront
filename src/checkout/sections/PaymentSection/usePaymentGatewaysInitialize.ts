@@ -8,10 +8,7 @@ import { getFilteredPaymentGateways } from "@/checkout/sections/PaymentSection/u
 
 export const usePaymentGatewaysInitialize = () => {
 	const {
-		checkout: { billingAddress },
-	} = useCheckout();
-	const {
-		checkout: { id: checkoutId, availablePaymentGateways },
+		checkout: { id: checkoutId, availablePaymentGateways, billingAddress },
 	} = useCheckout();
 
 	const billingCountry = billingAddress?.country.code as MightNotExist<CountryCode>;
