@@ -20,7 +20,7 @@ export const generateStaticParams = async () => {
 				.map((channel) => ({ channel: channel.slug })) ?? []
 		);
 	} else {
-		return [{ channel: "default-channel" }];
+		return [{ channel: "usd" }];
 	}
 };
 
