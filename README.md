@@ -1,5 +1,4 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsaleor%2Fstorefront&env=NEXT_PUBLIC_SALEOR_API_URL&envDescription=Full%20Saleor%20GraphQL%20endpoint%20URL%2C%20eg%3A%20https%3A%2F%2Fstorefront1.saleor.cloud%2Fgraphql%2F&project-name=my-saleor-storefront&repository-name=my-saleor-storefront&demo-title=Saleor%20Next.js%20Storefront&demo-description=Starter%20pack%20for%20building%20performant%20e-commerce%20experiences%20with%20Saleor.&demo-url=https%3A%2F%2Fstorefront.saleor.io%2F&demo-image=https%3A%2F%2Fstorefront-d5h86wzey-saleorcommerce.vercel.app%2Fopengraph-image.png%3F4db0ee8cf66e90af)
-[![Storefront Demo](https://img.shields.io/badge/VIEW%20DEMO-DFDFDF?style=for-the-badge)](https://storefront.saleor.io)
 
 ![Nextjs Storefront](./public/screenshot.png)
 
@@ -73,6 +72,7 @@
 ## Quickstart
 
 ### 1. Create Saleor backend instance
+
 To quickly get started with the backend, use a free developer account at [Saleor Cloud](https://cloud.saleor.io/?utm_source=storefront&utm_medium=github).
 
 Alternatively you can [run Saleor locally using docker](https://docs.saleor.io/docs/3.x/setup/docker-compose?utm_source=storefront&utm_medium=github).
@@ -96,6 +96,7 @@ saleor storefront create --url https://{SALEOR_HOSTNAME}/graphql/
 #### [Option 2] Manual install
 
 Clone repository:
+
 ```bash
 git clone https://github.com/saleor/storefront.git
 ```
@@ -113,7 +114,6 @@ Then, [install `pnpm`](https://pnpm.io/installation) and run the following comma
 ```bash
 pnpm i
 ```
-
 
 ## Payments
 
