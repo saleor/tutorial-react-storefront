@@ -26192,7 +26192,7 @@ export type CheckoutFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -26207,7 +26207,7 @@ export type CheckoutFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -26362,7 +26362,7 @@ export type AddressFragment = {
 	id: string;
 	city: string;
 	phone?: string | null;
-	postalCode: string;
+	postalCode: Uppercase<string>;
 	companyName: string;
 	cityArea: string;
 	streetAddress1: string;
@@ -26403,7 +26403,7 @@ export type CheckoutQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -26418,7 +26418,7 @@ export type CheckoutQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -26567,7 +26567,7 @@ export type CheckoutLinesUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -26582,7 +26582,7 @@ export type CheckoutLinesUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -26720,7 +26720,7 @@ export type CheckoutLineDeleteMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -26735,7 +26735,7 @@ export type CheckoutLineDeleteMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -26873,7 +26873,7 @@ export type CheckoutEmailUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -26888,7 +26888,7 @@ export type CheckoutEmailUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27025,7 +27025,7 @@ export type CheckoutCustomerAttachMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27040,7 +27040,7 @@ export type CheckoutCustomerAttachMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27179,7 +27179,7 @@ export type CheckoutShippingAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27194,7 +27194,7 @@ export type CheckoutShippingAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27333,7 +27333,7 @@ export type CheckoutBillingAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27348,7 +27348,7 @@ export type CheckoutBillingAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27486,7 +27486,7 @@ export type CheckoutDeliveryMethodUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27501,7 +27501,7 @@ export type CheckoutDeliveryMethodUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27661,7 +27661,7 @@ export type CheckoutAddPromoCodeMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27676,7 +27676,7 @@ export type CheckoutAddPromoCodeMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27815,7 +27815,7 @@ export type CheckoutRemovePromoCodeMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -27830,7 +27830,7 @@ export type CheckoutRemovePromoCodeMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28010,7 +28010,7 @@ export type OrderFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -28025,7 +28025,7 @@ export type OrderFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -28122,7 +28122,7 @@ export type OrderQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28137,7 +28137,7 @@ export type OrderQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28314,7 +28314,7 @@ export type UserFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -28329,7 +28329,7 @@ export type UserFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -28344,7 +28344,7 @@ export type UserFragment = {
 		id: string;
 		city: string;
 		phone?: string | null;
-		postalCode: string;
+		postalCode: Uppercase<string>;
 		companyName: string;
 		cityArea: string;
 		streetAddress1: string;
@@ -28369,7 +28369,7 @@ export type UserQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28384,7 +28384,7 @@ export type UserQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28399,7 +28399,7 @@ export type UserQuery = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28465,7 +28465,7 @@ export type UserAddressDeleteMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28480,7 +28480,7 @@ export type UserAddressDeleteMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28495,7 +28495,7 @@ export type UserAddressDeleteMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28517,7 +28517,7 @@ export type UserAddressDeleteMutation = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28548,7 +28548,7 @@ export type UserAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28563,7 +28563,7 @@ export type UserAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28578,7 +28578,7 @@ export type UserAddressUpdateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28600,7 +28600,7 @@ export type UserAddressUpdateMutation = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
@@ -28631,7 +28631,7 @@ export type UserAddressCreateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28646,7 +28646,7 @@ export type UserAddressCreateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28661,7 +28661,7 @@ export type UserAddressCreateMutation = {
 				id: string;
 				city: string;
 				phone?: string | null;
-				postalCode: string;
+				postalCode: Uppercase<string>;
 				companyName: string;
 				cityArea: string;
 				streetAddress1: string;
@@ -28683,7 +28683,7 @@ export type UserAddressCreateMutation = {
 			id: string;
 			city: string;
 			phone?: string | null;
-			postalCode: string;
+			postalCode: Uppercase<string>;
 			companyName: string;
 			cityArea: string;
 			streetAddress1: string;
