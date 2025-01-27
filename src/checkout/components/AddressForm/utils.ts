@@ -47,16 +47,21 @@ export const getAllAddressFieldKeys = () => Object.keys(getEmptyAddressFormData(
 export const getAddressInputData = ({
 	countryCode,
 	country,
+	postalCode,
 	...rest
 }: Partial<
 	AddressFormData & {
 		countryCode?: CountryCode;
 		country: CountryDisplay;
 	}
->): AddressInput => ({
-	...pick(rest, getAllAddressFieldKeys()),
-	country: countryCode || (country?.code as CountryCode),
-});
+>): AddressInput => {
+	const formattedPostalCode = postalCode ? postalCode.toUpperCase() : "";
+	return {
+		...pick(rest, getAllAddressFieldKeys()),
+		country: countryCode || (country?.code as CountryCode),
+		postalCode: formattedPostalCode,
+	};
+};
 
 export const getAddressInputDataFromAddress = (
 	address: OptionalAddress | Partial<AddressFragment>,
