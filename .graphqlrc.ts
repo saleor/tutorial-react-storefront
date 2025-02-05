@@ -20,8 +20,46 @@ if (!schemaUrl) {
 const config: CodegenConfig = {
 	overwrite: true,
 	schema: schemaUrl,
-	documents: "src/graphql/**/*.graphql",
+	documents: "src/**/*.graphql",
 	generates: {
+		"src/checkout/graphql/index.ts": {
+			plugins: [
+				{
+					add: {
+						content: '// THIS FILE IS GENERATED WITH `pnpm generate`\nimport "graphql/language/ast";',
+					},
+				},
+				"typescript",
+				"typescript-operations",
+				"typescript-urql",
+			],
+			config: {
+				scalars: {
+					Date: "string",
+					DateTime: "string",
+					Day: "number",
+					Decimal: "number",
+					GenericScalar: "unknown",
+					JSON: "unknown",
+					JSONString: "string",
+					Metadata: "Record<string, string>",
+					Minute: "number",
+					PositiveDecimal: "number",
+					UUID: "string",
+					Upload: "unknown",
+					WeightScalar: "unknown",
+					_Any: "unknown",
+				},
+				dedupeOperationSuffix: true,
+				enumsAsTypes: true,
+				documentMode: "string",
+				useTypeImports: true,
+				strictScalars: true,
+			},
+		},
+		"src/checkout/graphql.schema.json": {
+			plugins: ["introspection"],
+		},
 		"src/gql/": {
 			preset: "client",
 			plugins: [],
