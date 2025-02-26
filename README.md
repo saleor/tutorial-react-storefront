@@ -30,7 +30,7 @@
 </div>
 
 > [!TIP]
-> Questions or issues? Check our [discord](https://discord.gg/H52JTZAtSH) channel for help.
+> Questions or issues? Check our [Discord](https://discord.gg/H52JTZAtSH) channel for help.
 
 ## Features
 
@@ -43,7 +43,6 @@
 
 **Global:**
 
-- Channel switcher and Geo detection (coming soon)
 - Dynamic menu
 - Hamburger menu
 - SEO data
@@ -66,7 +65,6 @@
 
 **My account:**
 
-- Order history (coming soon)
 - Order completion
 - Order details
 
@@ -121,9 +119,6 @@ Currently, Saleor Storefront supports payments via the [Saleor Adyen App](https:
 
 > WARNING:
 > To configure the Adyen App, you must have an account with [Adyen](https://www.adyen.com/).
-
-> NOTE:
-> Saleor Stripe App integration is a work in progress.
 
 ## Development
 
