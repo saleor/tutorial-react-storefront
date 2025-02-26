@@ -9,7 +9,7 @@ jobs:
   build_and_test:
     if: ${{ github.event.deployment_status.state == 'success' }}
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       NEXT_PUBLIC_SALEOR_API_URL: https://storefront1.saleor.cloud/graphql/
 
